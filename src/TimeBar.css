@@ -1,0 +1,24 @@
+.time-bar {
+    width: 100%;
+    height: 10px;
+}
+
+.time-bar-inner {
+    height: 100%;
+    width: 100%;
+    background-color: #3b82f6;
+    animation: shrink 5s linear forwards;
+}
+
+.time-bar-inner.paused {
+    animation-play-state: paused;
+}
+
+@keyframes shrink {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }

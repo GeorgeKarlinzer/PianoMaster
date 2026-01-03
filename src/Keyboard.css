@@ -1,0 +1,66 @@
+.keyboard {
+    display: flex;
+    flex-direction: row;
+    font-size: 4.8%;
+    margin: auto;
+}
+
+.octave {
+    position: relative;
+    display: flex;
+}
+
+.white-key-23 {
+    background-color: white;
+    width: 23em;
+    height: 150em;
+    outline: 1px solid black;
+    cursor: pointer;
+    position: relative;
+}
+
+.white-key-24 {
+    background-color: white;
+    width: 24em;
+    height: 150em;
+    outline: 1px solid black;
+    cursor: pointer;
+    position: relative;
+}
+
+.black-key {
+    background-color: black;
+    width: 14em;
+    height: 90em;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.white-key-24:hover {
+    background-color: #ccc;
+}
+
+.white-key-23:hover {
+    background-color: #ccc;
+}
+
+.black-key:hover {
+    background-color: #2c2c2c;
+}
+
+.key-midi-debug {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.correct-key {
+    background-color: rgb(118, 201, 118) !important;
+}
+
+.incorrect-key {
+    background-color: rgb(208, 109, 109) !important;
+}

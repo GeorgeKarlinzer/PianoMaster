@@ -1,0 +1,87 @@
+.staff {
+    background-color: white;
+    width: 200px;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.line-long {
+    height: 2px;
+    background-color: black;
+}
+
+.line-short {
+    height: 2px;
+    background-color: black;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.note {
+    font-size: 50px;
+    pointer-events: none;
+    color: black;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 0;
+    height: fit-content;
+    user-select: none;
+}
+
+.note-sharp::before {
+    font-size: 35px;
+    color: black;
+    position: absolute;
+    content: '♯';
+    top: 23px;
+    left: -15px;
+}
+
+.note-flat::before {
+    content: '♭';
+    font-size: 35px;
+    color: black;
+    position: absolute;
+    top: 16px;
+    left: -15px;
+}
+
+.note-natural::before {
+    content: '♮';
+    font-size: 35px;
+    color: black;
+    position: absolute;
+    top: 23px;
+    left: -15px;
+}
+
+.treble-clef::after {
+    color: black;
+    content: '𝄞';
+    position: absolute;
+    font-size: 80px;
+    top: 10px;
+    left: 0;
+}
+
+.bass-clef::after {
+    color: black;
+    content: '𝄢';
+    position: absolute;
+    font-size: 60px;
+    top: 22px;
+    left: 0;
+}
